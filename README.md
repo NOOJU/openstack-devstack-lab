@@ -1,6 +1,6 @@
-# DevStack 설치 가이드 (테스트 환경용)
+# DevStack 설치 가이드 
 
-테스트 환경으로 구성하기에 적합한 **DevStack**을 통해 **OpenStack**을 설치하는 과정을 정리합니다.
+테스트, 학습 환경으로 구성하기에 적합한 **DevStack**을 통해 **OpenStack**을 설치하는 과정을 정리합니다.
 
 ---
 
@@ -21,7 +21,7 @@
 
 ```bash
 sudo apt update
-sudo apt install python3 python3-pip virtualenv git
+sudo apt install python3 python3-pip virtualenv git -y
 ```
 
 ### 2. stack 사용자 생성 및 권한 설정
@@ -59,10 +59,10 @@ vim local.conf
 #### (3) local.conf 파일 수정 내용
 
 ```bash
-ADMIN_PASSWORD=secret
-DATABASE_PASSWORD=secret
-RABBIT_PASSWORD=secret
-SERVICE_PASSWORD=secret
+ADMIN_PASSWORD=stack
+DATABASE_PASSWORD=stack
+RABBIT_PASSWORD=stack
+SERVICE_PASSWORD=stack
 
 HOST_IP=192.168.x.x  # ifconfig 명령어를 통해 확인한 IP 입력
 ```
@@ -81,6 +81,5 @@ HOST_IP=192.168.x.x  # ifconfig 명령어를 통해 확인한 IP 입력
 
 ## 참고 사항
 
-- DevStack은 **테스트 및 학습 목적**에 적합하며, 프로덕션 환경용으로는 권장되지 않습니다.
 - 설치 완료 후 Horizon 대시보드에 접속하려면 브라우저에서 `http://<HOST_IP>/dashboard`로 접근하세요.
 - DevStack 환경은 재부팅 시 초기화될 수 있으니, 중요한 변경 사항은 별도로 백업해두세요.
