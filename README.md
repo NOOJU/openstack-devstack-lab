@@ -79,6 +79,44 @@ HOST_IP=192.168.x.x  # ifconfig 명령어를 통해 확인한 IP 입력
 
 ---
 
+## virsh를 이용한 OpenStack VM 관리
+
+설치가 완료된 후, DevStack에서 생성된 가상 머신들을 `virsh` 명령어로 관리할 수 있습니다.
+
+### 1. VM 리스트 확인
+
+```bash
+sudo virsh list --all
+```
+➔ 현재 libvirt가 관리하는 모든 VM (실행 중/중지된 것 포함) 리스트 출력
+
+### 2. 특정 VM 상세 정보 확인
+
+```bash
+sudo virsh dominfo [도메인이름]
+```
+예시:
+```bash
+sudo virsh dominfo instance-00000001
+```
+➔ 특정 VM(도메인)의 상세 정보를 조회
+
+### 3. VM 콘솔 접속
+
+```bash
+sudo virsh console [도메인이름]
+```
+예시:
+```bash
+sudo virsh console instance-00000001
+```
+➔ SSH 없이 직접 VM의 터미널로 접속
+
+> **참고:** 콘솔 접속 종료는 `Ctrl + ]` 키를 입력하여 종료할 수 있습니다.
+
+---
+
+
 ## 참고 사항
 
 - 설치 완료 후 Horizon 대시보드에 접속하려면 브라우저에서 `http://<HOST_IP>/dashboard`로 접근하세요.
