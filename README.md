@@ -72,6 +72,48 @@ HOST_IP=192.168.x.x  # ip a 명령어를 통해 확인한 2번째 IP 입력
 
 ---
 
+## OpenStack CLI를 이용한 기본 리소스 조회 실습
+
+DevStack 설치 후, OpenStack CLI를 사용하여 리소스를 간단히 조회할 수 있습니다.
+
+### 1. 인증 환경 설정
+
+```bash
+source openrc admin admin
+```
+
+### 2. 네트워크 리스트 확인
+
+```bash
+openstack network list
+```
+
+### 3. 특정 네트워크 상세 정보 확인
+
+```bash
+openstack network show network1100
+```
+
+### 4. 서버(인스턴스) 리스트 확인
+
+```bash
+openstack server list
+```
+
+### 5. 특정 서버 상세 정보 확인
+
+```bash
+openstack server show vm1100-1
+```
+
+### 6. 라우터 리스트 확인
+
+```bash
+openstack router list
+```
+
+---
+
 ## virsh를 이용한 OpenStack VM 관리
 
 설치가 완료된 후, DevStack에서 생성된 가상 머신들을 `virsh` 명령어로 관리할 수 있습니다.
@@ -108,7 +150,6 @@ sudo virsh console instance-00000001
 > **참고:** 콘솔 접속 종료는 `Ctrl + ]` 키를 입력하여 종료할 수 있습니다.
 
 ---
-
 
 ## 참고 사항
 
