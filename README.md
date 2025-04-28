@@ -42,21 +42,14 @@ cd devstack
 
 ### 4. local.conf 설정
 
-#### (1) IP 확인 및 편집기 설치
-
-```bash
-sudo apt install net-tools
-sudo apt install vim
-```
-
-#### (2) local.conf 파일 생성 및 수정
+#### (1) local.conf 파일 생성 및 수정
 
 ```bash
 cp ./samples/local.conf local.conf
 vim local.conf
 ```
 
-#### (3) local.conf 파일 수정 내용
+#### (2) local.conf 파일 수정 내용
 
 ```bash
 ADMIN_PASSWORD=stack
@@ -64,7 +57,7 @@ DATABASE_PASSWORD=stack
 RABBIT_PASSWORD=stack
 SERVICE_PASSWORD=stack
 
-HOST_IP=192.168.x.x  # ifconfig 명령어를 통해 확인한 IP 입력
+HOST_IP=192.168.x.x  # ip a 명령어를 통해 확인한 2번째 IP 입력
 ```
 
 ---
