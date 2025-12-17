@@ -14,7 +14,16 @@
   - 디스크: **40GB**
   - CPU: **4 Core** 
 <br/>
-PDF를 참고하여 환경 설치가 모두 끝낸 후 아래 실습을 진행해주세요!
+PDF 및 유튜브 영상을 참고하여 환경 설치가 모두 끝낸 후 아래 실습을 진행해주세요!
+<br/>
+<br/>
+**[OpenStack 실습 강의 ①] VirtualBox 기반 OpenStack 환경 구축:**
+<br/>
+https://youtu.be/PwCHXG9frpg
+<br/>
+**[OpenStack 실습 강의 ②] DevStack 설치 & OpenStack VM 생성과 네트워크 통신 실습 :**
+<br/>
+https://youtu.be/efGyEr54Jyw
 
 ---
 
