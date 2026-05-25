@@ -19,11 +19,21 @@
 
 PDF 및 유튜브 영상을 참고하여 환경 설치를 모두 끝낸 후 아래 실습을 진행해주세요!
 
-**[OpenStack 실습 강의 ①] VirtualBox 기반 OpenStack 환경 구축:**
+<!-- **[OpenStack 실습 강의 ①] VirtualBox 기반 OpenStack 환경 구축:**
 https://youtu.be/PwCHXG9frpg
 
 **[OpenStack 실습 강의 ②] DevStack 설치 & OpenStack VM 생성과 네트워크 통신 실습:**
-https://youtu.be/efGyEr54Jyw
+https://youtu.be/efGyEr54Jyw -->
+
+## 🎥 Demo / Lecture Videos
+
+### [OpenStack 실습 강의 ①] VirtualBox 기반 OpenStack 환경 구축
+
+[![OpenStack 실습 강의 1](https://img.youtube.com/vi/PwCHXG9frpg/maxresdefault.jpg)](https://youtu.be/PwCHXG9frpg)
+
+### [OpenStack 실습 강의 ②] DevStack 설치 & OpenStack VM 생성과 네트워크 통신 실습
+
+[![OpenStack 실습 강의 2](https://img.youtube.com/vi/efGyEr54Jyw/maxresdefault.jpg)](https://youtu.be/efGyEr54Jyw)
 
 ---
 
